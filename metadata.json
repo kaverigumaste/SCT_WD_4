@@ -1,0 +1,8 @@
+{
+  "name": "To-Do List Manager",
+  "description": "A professional, modern To-Do web app with custom categories, due dates & times, task statistics dashboard, search, and local data persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
