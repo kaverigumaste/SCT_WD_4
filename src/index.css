@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================================
+   TASKFLOW PREMIUM COLOR SYSTEM
+   ========================================= */
+
+@theme {
+    /* Light / default palette */
+    --color-slate-50: #f5f7ff;
+    --color-slate-100: #eef1fa;
+    --color-slate-200: #dce3f0;
+    --color-slate-300: #c9d2e3;
+    --color-slate-400: #9aa8bd;
+    --color-slate-500: #71809a;
+    --color-slate-600: #596a84;
+    --color-slate-700: #40516c;
+    --color-slate-800: #2f405b;
+    --color-slate-900: #24324a;
+    --color-slate-950: #0b0d1a;
+
+    /* Blue */
+    --color-blue-50: #eef8fb;
+    --color-blue-100: #d9f0f4;
+    --color-blue-200: #b9e1e8;
+    --color-blue-300: #8bcbd6;
+    --color-blue-400: #65b9c7;
+    --color-blue-500: #3b82b6;
+    --color-blue-600: #32739f;
+    --color-blue-700: #2b648d;
+    --color-blue-800: #245474;
+    --color-blue-900: #1d455f;
+    --color-blue-950: #112c3d;
+
+    /* Violet */
+    --color-violet-50: #f6f4ff;
+    --color-violet-100: #ede9fe;
+    --color-violet-200: #ddd6fe;
+    --color-violet-300: #c4b5fd;
+    --color-violet-400: #a78bfa;
+    --color-violet-500: #6d5bd0;
+    --color-violet-600: #5d4cc0;
+    --color-violet-700: #4f3fad;
+    --color-violet-800: #43358e;
+    --color-violet-900: #392f72;
+    --color-violet-950: #211c45;
+
+    /* Emerald / Teal */
+    --color-emerald-50: #effcf9;
+    --color-emerald-100: #d8f7f0;
+    --color-emerald-200: #b5ede2;
+    --color-emerald-300: #84ddce;
+    --color-emerald-400: #5dd4c2;
+    --color-emerald-500: #49b99a;
+    --color-emerald-600: #3da286;
+    --color-emerald-700: #32836f;
+    --color-emerald-800: #2d685b;
+    --color-emerald-900: #28554c;
+    --color-emerald-950: #12342e;
+}
+
+/* =========================================
+   DARK MODE PALETTE
+   ========================================= */
+
+.dark {
+    --color-slate-50: #f1f3ff;
+    --color-slate-100: #e4e7f5;
+    --color-slate-200: #c9cee0;
+    --color-slate-300: #aeb5ca;
+    --color-slate-400: #8e96b0;
+    --color-slate-500: #737c98;
+    --color-slate-600: #5d6682;
+    --color-slate-700: #454e69;
+    --color-slate-800: #20243a;
+    --color-slate-900: #171a2e;
+    --color-slate-950: #0b0d1a;
+
+    --color-blue-50: #102b34;
+    --color-blue-100: #153b46;
+    --color-blue-200: #1c5664;
+    --color-blue-300: #287685;
+    --color-blue-400: #3c9cab;
+    --color-blue-500: #55b7c4;
+    --color-blue-600: #49a9b7;
+    --color-blue-700: #3e95a3;
+    --color-blue-800: #327986;
+    --color-blue-900: #285f6a;
+    --color-blue-950: #163840;
+
+    --color-violet-50: #211c45;
+    --color-violet-100: #2a2454;
+    --color-violet-200: #3b3370;
+    --color-violet-300: #51458e;
+    --color-violet-400: #7162c4;
+    --color-violet-500: #8b7be8;
+    --color-violet-600: #7b6bd5;
+    --color-violet-700: #6b5bc2;
+    --color-violet-800: #594ca4;
+    --color-violet-900: #483d83;
+    --color-violet-950: #2c2753;
+
+    --color-emerald-50: #102f2b;
+    --color-emerald-100: #164039;
+    --color-emerald-200: #20574e;
+    --color-emerald-300: #347f70;
+    --color-emerald-400: #4bb9a8;
+    --color-emerald-500: #5dd4c2;
+    --color-emerald-600: #50c1af;
+    --color-emerald-700: #43a696;
+    --color-emerald-800: #398879;
+    --color-emerald-900: #326d61;
+    --color-emerald-950: #193e37;
+}
+
+/* =========================================
+   GLOBAL UI POLISH
+   ========================================= */
+
+html {
+    background: #f5f7ff;
+}
+
+html.dark {
+    background: #0b0d1a;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #f5f7ff;
+    color: #24324a;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.dark body {
+    background: #0b0d1a;
+    color: #f1f3ff;
+}
+
+/* Smooth theme transition */
+* {
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        color 0.2s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Selection */
+::selection {
+    background: #6d5bd0;
+    color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8c2d5;
+    border-radius: 999px;
+    quotes: ;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #3c4260;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6d5bd0;
+}
