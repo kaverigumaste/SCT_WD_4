@@ -91,10 +91,4 @@ metadata.json
 
 This project was developed as part of the **SkillCraft Technology Web Development Internship** to demonstrate practical skills in building a modern, interactive, and responsive web application.
 
-👩‍💻 Author
 
-**Kaveri Gumaste**
-
----
-
-⭐ If you find this project useful, consider giving it a star!
